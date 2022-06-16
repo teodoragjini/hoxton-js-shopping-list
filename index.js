@@ -33,12 +33,9 @@ let shoppingList = [
 let product = prompt("What is the name of the item?");
 let price = Number(prompt("What is the price?"));
 
-// @ts-ignore 
+// @ts-ignore
 
-shoppingList.push({
- product: product,
-  price: price,
-});
+shoppingList.push({product, price});
 
 let total = 0;
 for (let item of shoppingList) {
